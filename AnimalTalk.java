@@ -30,6 +30,9 @@ class GizmoTheCat extends Cat {
 class Fish extends GenericAnimal {
 	public String talk(){
 		return "Blub"; }
+class Cow extends GenericAnimal {
+	public String talk(){
+		return "Moo"; }
 }
 
 public class AnimalTalk {
@@ -53,6 +56,8 @@ public class AnimalTalk {
 
 		GenericAnimal D = new Fish();
 		System.out.println(D.talk());
+		GenericAnimal E = new Cow();
+		System.out.println(E.talk());
 
 	}
 
