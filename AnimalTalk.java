@@ -30,6 +30,7 @@ class GizmoTheCat extends Cat {
 class Fish extends GenericAnimal {
 	public String talk(){
 		return "Blub"; }
+	}
 class Cow extends GenericAnimal {
 	public String talk(){
 		return "Moo"; }
