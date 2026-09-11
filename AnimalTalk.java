@@ -27,6 +27,11 @@ class GizmoTheCat extends Cat {
 		return "Hello, I would like some oatmeal."; }
 }
 
+class Fish extends GenericAnimal {
+	public String talk(){
+		return "Blub"; }
+}
+
 public class AnimalTalk {
 	public static void main(String[] args) {
 		GenericAnimal A = new GenericAnimal();
@@ -45,6 +50,9 @@ public class AnimalTalk {
 		GizmoTheCat G2 = new GizmoTheCat();
 		GenericAnimal F = G2;  // Compile time type? Runtime type?
 		System.out.println(F.talk());
+
+		GenericAnimal D = new Fish();
+		System.out.println(D.talk());
 
 	}
 
